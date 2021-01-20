@@ -4,7 +4,7 @@
 bool f(int n) {
     int i;
 
-    for(i=2; i<=sqrt((double)i); i++) {
+    for(i=2; i<=sqrt((double)n); i++) {
         if(n%i==0) return false;
     }
     return true;
@@ -15,12 +15,20 @@ int main() {
 
     scanf("%d %d", &m, &n);
     for(i=m; i<=n; i++) {
+        if(i==1) {
+            continue;
+        }
         if(f(i)) {
             s+=i;
             if(min==0) min=i;
         }
     }
-    printf("%d\n%d", s, min);
+
+    if(s==0 && min==0) {
+        printf("-1");
+    } else {
+        printf("%d\n%d", s, min);
+    }
 
     return 0;
 }
