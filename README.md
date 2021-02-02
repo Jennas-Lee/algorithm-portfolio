@@ -1,12 +1,12 @@
-# algorithm-portpolio
+# algorithm-portfolio
 
-This repository is my Algorithms Portpolio.
+This repository is my Algorithms Portfolio.
 
 I use Backjoon, CodeUp, and Codeforces.
 
 I always use C/C++ when I study about Algorithms.
 
-I always use CLion when I use C/C++.
+I always use VSCode and Dev C++ when I use C/C++.
 
 Backjoon : [Click Here](https://www.acmicpc.net/user/bi0416)
 
