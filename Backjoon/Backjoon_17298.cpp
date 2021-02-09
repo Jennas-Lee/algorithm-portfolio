@@ -3,36 +3,38 @@
 
 using namespace std;
 
-int main() {
-    stack<int> main, t;
-    int n, a[1000005], r[1000005], i, j=0;
+stack<int> s;
+int n, a[1000010], m=0, i;
 
-    scanf("%d", &n);
+int main() {scanf("%d", &n);
     for(i=0; i<n; i++) {
         scanf("%d", &a[i]);
-    }
-    for(i=n-1; i>=0; i--) {
-        while(main.size()>=0) {
-            if(main.size()==0) {
-                // printf("-1 ");
-                r[j++]=-1;
-                main.push(a[i]);
-                t.push(i);
-                break;
-            } else if(main.top()>=a[i]) {
-                // printf("%d ", main.top());
-                r[j++]=main.top();
-                main.push(a[i]);
-                t.push(i);
-                break;
-            } else {
-                main.pop();
-                t.pop();
-            }
+        if(a[i]>m) {
+            m=a[i];
         }
     }
-    for(j-=1; j>=0; j--) {
-        printf("%d ", r[j]);
+    s.push(a[0]);
+    for(i=1; i<=n; i++) {
+        if(i==n) {
+            printf("-1");
+            return 0;
+        } else if(s.size()==0) {
+        	s.push(a[i]);
+        }
+        if(s.top()>=a[i]) {
+            if(s.top()==m) {
+                printf("-1 ");
+                s.pop();
+            } else {
+                s.push(a[i]);
+            }
+        } else if(s.top()<a[i]) {
+            while(s.size()>0) {
+                printf("%d ", a[i]);
+                s.pop();
+            }
+            s.push(a[i]);
+        }
     }
 
     return 0;
