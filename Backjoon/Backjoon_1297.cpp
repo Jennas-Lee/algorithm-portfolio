@@ -3,9 +3,11 @@
 
 int main() {
     int a, b, c;
+    double x;
 
     scanf("%d %d %d", &a, &b, &c);
-    printf("%d %d", (int)floor(b*a/18.357), (int)floor(c*a/18.357));
+    x=sqrt(((double)a*a)/((double)b*b+(double)c*c));
+    printf("%d %d", (int)floor(b*x), (int)floor(c*x));
 
     return 0;
 }
