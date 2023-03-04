@@ -1,0 +1,1 @@
+# [K번째 접미어](https://out.swexpertacademy.samsung.com/common/swea/solvingPractice/solveclub/solveclubProblemDetail.do?solveclubId=AVX8kOmPrQsAAAEJ&solveclubPassword=&password=&attendYn=Y&contestProbId=AUWWf0gfF68AAAEN&sortingType=)

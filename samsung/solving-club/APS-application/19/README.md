@@ -1,0 +1,1 @@
+# [소수 완제품 확률](https://out.swexpertacademy.samsung.com/common/swea/solvingPractice/solveclub/solveclubProblemDetail.do?solveclubId=AVX8kOmPrQsAAAEJ&solveclubPassword=&password=&attendYn=Y&contestProbId=AVNeOxR_LVkAAAGr&sortingType=)
